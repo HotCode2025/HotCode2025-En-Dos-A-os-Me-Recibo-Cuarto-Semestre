@@ -1,0 +1,65 @@
+'''
+Imaginá que estás construyendo un restaurante profesional. No ponés a una sola persona a cocinar, cobrar, limpiar, atender la puerta y llevar la contabilidad. Si esa persona se enferma o comete un error, se cae todo el restaurante.
+En programación hacemos exactamente lo mismo: dividimos el proyecto en 6 empleados especialistas (módulos). Cada uno tiene una sola tarea y no se mete en la del resto.
+
+--- 1. logger_base.py — La cámara de seguridad y la libreta de notas ---
+¿Qué es? Es el encargado de anotar absolutamente todo lo que pasa en la aplicación.
+
+Explicación simple: Usar print() es como gritar algo en una habitación: en el momento lo escuchás, pero cuando te vas, la información se perdió. El Logger es una cámara de seguridad que graba cada movimiento en la pantalla y además lo escribe en un cuaderno físico (capa_datos.log).
+
+¿Para qué sirve? Si la aplicación falla a las 3 de la mañana, no tenés que adivinar qué pasó: abrís el archivo de log y lees exactamente: "A las 03:14 AM en la línea 27 falló la contraseña".
+
+
+--- 2. conexion.py — La flota de taxis (Pool de conexiones) ---
+¿Qué es? El administrador de los caminos o tuberías hacia la base de datos PostgreSQL.
+
+Explicación simple: Conectarse a la base de datos lleva tiempo (verificar usuario, contraseña, abrir el puerto). Si cada vez que un usuario hiciera un clic y tuviéramos que crear una conexión desde cero, la app sería lentísima.
+
+¿Qué es el "Pool"? Es como tener una parada de taxis en la puerta con 5 autos encendidos y listos. Cuando el sistema necesita consultar algo, toma un taxi del pool, viaja a la base de datos, trae la respuesta y devuelve el taxi a la parada para que lo use otro.
+
+
+--- 3. cursor_del_pool.py — El asistente automatizado (Context Manager with) ---
+¿Qué es? Es un asistente inteligente que maneja el trabajo sucio y los imprevistos cuando usás un "taxi" del pool.
+
+Explicación simple: Para hacer una consulta a la base de datos necesitás hacer varios pasos: pedir el taxi, pedir la herramienta para escribir (el cursor), hacer la consulta, confirmar los cambios (commit), o si hubo un error deshacerlos (rollback), y finalmente devolver el taxi.
+
+¿Por qué usamos with? Porque los humanos nos olvidamos cosas. Si te olvidás de devolver el taxi, los taxis se agotan y la app se traba. El bloque with es un piloto automático: le decís "hacé esto" y el asistente abre la conexión, ejecuta la orden, si hay un error deshace todo para no romper la base de datos, y devuelve la conexión solo, pase lo que pase.
+
+
+--- 4. usuario.py — El molde de galletitas (Clase Entidad) ---
+¿Qué es? Es la plantilla o ficha que define cómo es un "Usuario" dentro de Python.
+
+Explicación simple: En vez de andar pasando datos sueltos por todo el código como 1, "ramiro" y "1234", creamos un objeto ordenado que los empaqueta a todos juntos.
+
+¿Qué es el encapsulamiento (@property)? Es ponerle un "escudo" a los datos de la ficha. Evita que cualquiera cambie la contraseña o el ID sin pasar por las reglas de la clase (los Getters y Setters).
+
+
+--- 5. usuario_dao.py — El especialista en el depósito (Patrón DAO) ---
+¿Qué es? DAO significa Data Access Object (Objeto de Acceso a Datos). Es el único empleado de toda la empresa que sabe hablar el idioma SQL.
+
+Explicación simple: Al menú o a la pantalla de la app no le importa si los datos están guardados en PostgreSQL, MySQL o un archivo de Excel. Solamente quieren los datos. UsuarioDao es el encargado de traducir los pedidos de Python a consultas SQL (SELECT, INSERT, UPDATE, DELETE).
+
+¿Por qué es clave? Porque si mañana decidís cambiar la tabla o la base de datos, únicamente modificás este archivo. Todo el resto de tu aplicación sigue funcionando exactamente igual sin enterarse del cambio.
+
+
+--- 6. menu_app_usuario.py — El recepcionista (La interfaz) ---
+¿Qué es? La pantalla interactiva que ve el usuario en la consola.
+
+Explicación simple: Muestra las opciones (1. Listar, 2. Agregar, etc.), escucha lo que teclea el usuario y le pide las cosas al especialista (UsuarioDao). No sabe cómo funciona la base de datos ni cómo se manejan las conexiones; su único trabajo es ser amable y comunicarse con la persona que usa el sistema.
+
+
+7. ¿Cómo trabajan todos juntos? (Un ejemplo práctico)
+Cuando seleccionás la Opción 2 (Agregar usuario) en el menú:
+
+El Recepcionista (menu_app_usuario) te pide nombre y clave.
+
+Crea una ficha de Usuario (usuario.py) con esos datos.
+
+Le entrega esa ficha al Especialista SQL (usuario_dao).
+
+El especialista le pide ayuda al Asistente (cursor_del_pool).
+
+El asistente pide un taxi al Pool (conexion), ejecuta la orden de guardar, y le avisa al Cámara de Seguridad (logger_base) para que anote: "Se guardó el usuario Ramiro con éxito".
+
+El asistente devuelve el taxi al pool y le avisa al menú que todo salió bien.
+'''

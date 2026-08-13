@@ -1,0 +1,492 @@
+10:14:47 PM: DEBUG [conexion.py:36] Pool de conexiones creado con éxito: <psycopg2.pool.SimpleConnectionPool object at 0x000001C79C3F3B60>
+10:14:47 PM: DEBUG [conexion.py:48] Conexión obtenida del pool: <connection object at 0x000001C79BFDFDE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:14:47 PM: DEBUG [conexion.py:55] Conexión devuelta al pool: <connection object at 0x000001C79BFDFDE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:14:47 PM: DEBUG [conexion.py:61] Todas las conexiones del pool han sido cerradas.
+10:22:14 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+10:22:14 PM: DEBUG [conexion.py:40] Pool de conexiones creado con éxito: <psycopg2.pool.SimpleConnectionPool object at 0x0000024B6B013CB0>
+10:22:14 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x0000024B6AE23DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:22:14 PM: DEBUG [cursor_del_pool.py:59] Dentro del bloque with
+10:22:14 PM: DEBUG [cursor_del_pool.py:62] Resultado de la prueba: (2,)
+10:22:14 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+10:22:14 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+10:22:14 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x0000024B6AE23DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:27:49 PM: DEBUG [usuario.py:53] Usuario [ID: 1, Username: rmunoz, Password: 123456]
+10:27:49 PM: DEBUG [usuario.py:57] Usuario [ID: None, Username: jperez, Password: password123]
+10:32:55 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+10:32:56 PM: DEBUG [conexion.py:40] Pool de conexiones creado con éxito: <psycopg2.pool.SimpleConnectionPool object at 0x00000201077C3E00>
+10:32:56 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x00000201075A7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:32:56 PM: DEBUG [usuario_dao.py:26] Sentencia a ejecutar: SELECT id_usuario, username, password FROM usuario ORDER BY id_usuario
+10:32:56 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+10:32:56 PM: ERROR [cursor_del_pool.py:44] Ocurrió una excepción, se hace rollback: no existe la relación «usuario»
+LINE 1: SELECT id_usuario, username, password FROM usuario ORDER BY ...
+                                                   ^
+ <class 'psycopg2.errors.UndefinedTable'> <traceback object at 0x000002010787F540>
+10:32:56 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x00000201075A7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:33:34 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+10:33:34 PM: DEBUG [conexion.py:40] Pool de conexiones creado con éxito: <psycopg2.pool.SimpleConnectionPool object at 0x000001CA95113E00>
+10:33:34 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x000001CA94F87DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:33:34 PM: DEBUG [usuario_dao.py:26] Sentencia a ejecutar: SELECT id_usuario, username, password FROM usuario ORDER BY id_usuario
+10:33:34 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+10:33:34 PM: ERROR [cursor_del_pool.py:44] Ocurrió una excepción, se hace rollback: no existe la relación «usuario»
+LINE 1: SELECT id_usuario, username, password FROM usuario ORDER BY ...
+                                                   ^
+ <class 'psycopg2.errors.UndefinedTable'> <traceback object at 0x000001CA951B59C0>
+10:33:34 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x000001CA94F87DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:33:57 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+10:33:57 PM: DEBUG [conexion.py:40] Pool de conexiones creado con éxito: <psycopg2.pool.SimpleConnectionPool object at 0x000002157DDC3E00>
+10:33:57 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x000002157DC37DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:33:57 PM: DEBUG [usuario_dao.py:26] Sentencia a ejecutar: SELECT id_usuario, username, password FROM usuario ORDER BY id_usuario
+10:33:57 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+10:33:57 PM: ERROR [cursor_del_pool.py:44] Ocurrió una excepción, se hace rollback: no existe la relación «usuario»
+LINE 1: SELECT id_usuario, username, password FROM usuario ORDER BY ...
+                                                   ^
+ <class 'psycopg2.errors.UndefinedTable'> <traceback object at 0x000002157DE65CC0>
+10:33:57 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x000002157DC37DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:34:13 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+10:34:13 PM: DEBUG [conexion.py:40] Pool de conexiones creado con éxito: <psycopg2.pool.SimpleConnectionPool object at 0x000002C932553E00>
+10:34:13 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x000002C9323B7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:34:13 PM: DEBUG [usuario_dao.py:26] Sentencia a ejecutar: SELECT id_usuario, username, password FROM usuario ORDER BY id_usuario
+10:34:13 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+10:34:13 PM: ERROR [cursor_del_pool.py:44] Ocurrió una excepción, se hace rollback: no existe la relación «usuario»
+LINE 1: SELECT id_usuario, username, password FROM usuario ORDER BY ...
+                                                   ^
+ <class 'psycopg2.errors.UndefinedTable'> <traceback object at 0x000002C932605A80>
+10:34:13 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x000002C9323B7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:34:23 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+10:34:23 PM: DEBUG [conexion.py:40] Pool de conexiones creado con éxito: <psycopg2.pool.SimpleConnectionPool object at 0x0000027490033E00>
+10:34:23 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x000002748FE97DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:34:23 PM: DEBUG [usuario_dao.py:26] Sentencia a ejecutar: SELECT id_usuario, username, password FROM usuario ORDER BY id_usuario
+10:34:23 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+10:34:23 PM: ERROR [cursor_del_pool.py:44] Ocurrió una excepción, se hace rollback: no existe la relación «usuario»
+LINE 1: SELECT id_usuario, username, password FROM usuario ORDER BY ...
+                                                   ^
+ <class 'psycopg2.errors.UndefinedTable'> <traceback object at 0x00000274900E5FC0>
+10:34:23 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x000002748FE97DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:34:26 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+10:34:26 PM: DEBUG [conexion.py:40] Pool de conexiones creado con éxito: <psycopg2.pool.SimpleConnectionPool object at 0x000001710B0A3E00>
+10:34:26 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x000001710AF17DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:34:26 PM: DEBUG [usuario_dao.py:26] Sentencia a ejecutar: SELECT id_usuario, username, password FROM usuario ORDER BY id_usuario
+10:34:26 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+10:34:26 PM: ERROR [cursor_del_pool.py:44] Ocurrió una excepción, se hace rollback: no existe la relación «usuario»
+LINE 1: SELECT id_usuario, username, password FROM usuario ORDER BY ...
+                                                   ^
+ <class 'psycopg2.errors.UndefinedTable'> <traceback object at 0x000001710B145C40>
+10:34:26 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x000001710AF17DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:37:23 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+10:37:23 PM: DEBUG [conexion.py:40] Pool de conexiones creado con éxito: <psycopg2.pool.SimpleConnectionPool object at 0x000001D4CECBFCB0>
+10:37:23 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x000001D4CEAF7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:37:23 PM: DEBUG [usuario_dao.py:26] Sentencia a ejecutar: SELECT id_usuario, username, password FROM usuario ORDER BY id_usuario
+10:37:23 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+10:37:23 PM: ERROR [cursor_del_pool.py:44] Ocurrió una excepción, se hace rollback: no existe la relación «usuario»
+LINE 1: SELECT id_usuario, username, password FROM usuario ORDER BY ...
+                                                   ^
+ <class 'psycopg2.errors.UndefinedTable'> <traceback object at 0x000001D4CE87F900>
+10:37:23 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x000001D4CEAF7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:37:23 PM: ERROR [men_app_usuario.py:59] Ocurrió un error en el menú: no existe la relación «usuario»
+LINE 1: SELECT id_usuario, username, password FROM usuario ORDER BY ...
+                                                   ^
+
+10:37:52 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+10:37:52 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x000001D4CEAF7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:37:52 PM: DEBUG [usuario_dao.py:40] Sentencia a ejecutar: INSERT INTO usuario(username, password) VALUES(%s, %s)
+10:37:52 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+10:37:52 PM: ERROR [cursor_del_pool.py:44] Ocurrió una excepción, se hace rollback: no existe la relación «usuario»
+LINE 1: INSERT INTO usuario(username, password) VALUES('ctarifa18', ...
+                    ^
+ <class 'psycopg2.errors.UndefinedTable'> <traceback object at 0x000001D4CED7E180>
+10:37:52 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x000001D4CEAF7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:37:52 PM: ERROR [men_app_usuario.py:59] Ocurrió un error en el menú: no existe la relación «usuario»
+LINE 1: INSERT INTO usuario(username, password) VALUES('ctarifa18', ...
+                    ^
+
+10:37:55 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+10:37:55 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x000001D4CEAF7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:37:55 PM: DEBUG [usuario_dao.py:26] Sentencia a ejecutar: SELECT id_usuario, username, password FROM usuario ORDER BY id_usuario
+10:37:55 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+10:37:55 PM: ERROR [cursor_del_pool.py:44] Ocurrió una excepción, se hace rollback: no existe la relación «usuario»
+LINE 1: SELECT id_usuario, username, password FROM usuario ORDER BY ...
+                                                   ^
+ <class 'psycopg2.errors.UndefinedTable'> <traceback object at 0x000001D4CED7DFC0>
+10:37:55 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x000001D4CEAF7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:37:55 PM: ERROR [men_app_usuario.py:59] Ocurrió un error en el menú: no existe la relación «usuario»
+LINE 1: SELECT id_usuario, username, password FROM usuario ORDER BY ...
+                                                   ^
+
+10:37:57 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+10:37:57 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x000001D4CEAF7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:37:57 PM: DEBUG [usuario_dao.py:26] Sentencia a ejecutar: SELECT id_usuario, username, password FROM usuario ORDER BY id_usuario
+10:37:57 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+10:37:57 PM: ERROR [cursor_del_pool.py:44] Ocurrió una excepción, se hace rollback: no existe la relación «usuario»
+LINE 1: SELECT id_usuario, username, password FROM usuario ORDER BY ...
+                                                   ^
+ <class 'psycopg2.errors.UndefinedTable'> <traceback object at 0x000001D4CED7E180>
+10:37:57 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x000001D4CEAF7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:37:57 PM: ERROR [men_app_usuario.py:59] Ocurrió un error en el menú: no existe la relación «usuario»
+LINE 1: SELECT id_usuario, username, password FROM usuario ORDER BY ...
+                                                   ^
+
+10:46:42 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+10:46:42 PM: DEBUG [conexion.py:40] Pool de conexiones creado con éxito: <psycopg2.pool.SimpleConnectionPool object at 0x000001D0C0FE3E00>
+10:46:42 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x000001D0C0E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:46:42 PM: DEBUG [usuario_dao.py:40] Sentencia a ejecutar: INSERT INTO usuario(username, password) VALUES(%s, %s)
+10:46:42 PM: DEBUG [usuario_dao.py:43] Usuario insertado correctamente: Usuario [ID: None, Username: ctarifa18, Password: 123456]
+10:46:42 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+10:46:42 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+10:46:42 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x000001D0C0E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:46:42 PM: INFO [men_app_usuario.py:42] Usuarios insertados: 1
+10:46:46 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+10:46:46 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x000001D0C0E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:46:46 PM: DEBUG [usuario_dao.py:26] Sentencia a ejecutar: SELECT id_usuario, username, password FROM usuario ORDER BY id_usuario
+10:46:46 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+10:46:46 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+10:46:46 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x000001D0C0E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:46:46 PM: INFO [men_app_usuario.py:35] Usuario [ID: 1, Username: ctarifa18, Password: 123456]
+10:47:21 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+10:47:21 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x000001D0C0E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:47:21 PM: DEBUG [usuario_dao.py:50] Sentencia a ejecutar: UPDATE usuario SET username=%s, password=%s WHERE id_usuario=%s
+10:47:21 PM: DEBUG [usuario_dao.py:53] Usuario actualizado correctamente: Usuario [ID: 1, Username: CandeltaTarifa18, Password: 123456]
+10:47:21 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+10:47:21 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+10:47:21 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x000001D0C0E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:47:21 PM: INFO [men_app_usuario.py:50] Usuarios actualizados: 1
+10:47:24 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+10:47:24 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x000001D0C0E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:47:24 PM: DEBUG [usuario_dao.py:26] Sentencia a ejecutar: SELECT id_usuario, username, password FROM usuario ORDER BY id_usuario
+10:47:24 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+10:47:24 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+10:47:24 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x000001D0C0E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:47:24 PM: INFO [men_app_usuario.py:35] Usuario [ID: 1, Username: CandeltaTarifa18, Password: 123456]
+10:47:47 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+10:47:47 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x000001D0C0E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:47:47 PM: DEBUG [usuario_dao.py:40] Sentencia a ejecutar: INSERT INTO usuario(username, password) VALUES(%s, %s)
+10:47:47 PM: DEBUG [usuario_dao.py:43] Usuario insertado correctamente: Usuario [ID: None, Username: RamiroMunoz2712, Password: 123456]
+10:47:47 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+10:47:47 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+10:47:47 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x000001D0C0E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:47:47 PM: INFO [men_app_usuario.py:42] Usuarios insertados: 1
+10:47:49 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+10:47:49 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x000001D0C0E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:47:49 PM: DEBUG [usuario_dao.py:26] Sentencia a ejecutar: SELECT id_usuario, username, password FROM usuario ORDER BY id_usuario
+10:47:49 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+10:47:49 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+10:47:49 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x000001D0C0E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:47:49 PM: INFO [men_app_usuario.py:35] Usuario [ID: 1, Username: CandeltaTarifa18, Password: 123456]
+10:47:49 PM: INFO [men_app_usuario.py:35] Usuario [ID: 2, Username: RamiroMunoz2712, Password: 123456]
+10:48:16 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+10:48:16 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x000001D0C0E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:48:16 PM: DEBUG [usuario_dao.py:60] Sentencia a ejecutar: DELETE FROM usuario WHERE id_usuario=%s
+10:48:16 PM: DEBUG [usuario_dao.py:63] Usuario eliminado con id: 2
+10:48:16 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+10:48:16 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+10:48:16 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x000001D0C0E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:48:16 PM: INFO [men_app_usuario.py:56] Usuarios eliminados: 1
+10:48:18 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+10:48:18 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x000001D0C0E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:48:18 PM: DEBUG [usuario_dao.py:26] Sentencia a ejecutar: SELECT id_usuario, username, password FROM usuario ORDER BY id_usuario
+10:48:18 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+10:48:18 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+10:48:18 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x000001D0C0E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+10:48:18 PM: INFO [men_app_usuario.py:35] Usuario [ID: 1, Username: CandeltaTarifa18, Password: 123456]
+10:48:21 PM: INFO [men_app_usuario.py:62] Salimos de la aplicación. ¡Hasta luego!
+11:11:17 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+11:11:17 PM: DEBUG [conexion.py:40] Pool de conexiones creado con éxito: <psycopg2.pool.SimpleConnectionPool object at 0x0000026718F63CB0>
+11:11:17 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x0000026718DD7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+11:11:17 PM: DEBUG [usuario_dao.py:26] Sentencia a ejecutar: SELECT id_usuario, username, password FROM usuario ORDER BY id_usuario
+11:11:17 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+11:11:17 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+11:11:17 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x0000026718DD7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+11:11:17 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 1, Username: CandeltaTarifa18, Password: 123456]
+11:13:35 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+11:13:35 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x0000026718DD7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+11:13:35 PM: DEBUG [usuario_dao.py:40] Sentencia a ejecutar: INSERT INTO usuario(username, password) VALUES(%s, %s)
+11:13:35 PM: DEBUG [usuario_dao.py:43] Usuario insertado correctamente: Usuario [ID: None, Username: RamaMunozz, Password: 1234]
+11:13:35 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+11:13:35 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+11:13:35 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x0000026718DD7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+11:13:35 PM: INFO [menu_app_usuario.py:42] Usuarios insertados: 1
+11:13:38 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+11:13:38 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x0000026718DD7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+11:13:38 PM: DEBUG [usuario_dao.py:26] Sentencia a ejecutar: SELECT id_usuario, username, password FROM usuario ORDER BY id_usuario
+11:13:38 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+11:13:38 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+11:13:38 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x0000026718DD7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+11:13:38 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 1, Username: CandeltaTarifa18, Password: 123456]
+11:13:38 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 3, Username: RamaMunozz, Password: 1234]
+11:14:07 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+11:14:07 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x0000026718DD7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+11:14:07 PM: DEBUG [usuario_dao.py:50] Sentencia a ejecutar: UPDATE usuario SET username=%s, password=%s WHERE id_usuario=%s
+11:14:07 PM: DEBUG [usuario_dao.py:53] Usuario actualizado correctamente: Usuario [ID: 3, Username: RamiroMunoz2712, Password: 123456]
+11:14:07 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+11:14:07 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+11:14:07 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x0000026718DD7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+11:14:07 PM: INFO [menu_app_usuario.py:50] Usuarios actualizados: 1
+11:14:09 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+11:14:09 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x0000026718DD7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+11:14:09 PM: DEBUG [usuario_dao.py:26] Sentencia a ejecutar: SELECT id_usuario, username, password FROM usuario ORDER BY id_usuario
+11:14:09 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+11:14:09 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+11:14:09 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x0000026718DD7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+11:14:09 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 1, Username: CandeltaTarifa18, Password: 123456]
+11:14:09 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 3, Username: RamiroMunoz2712, Password: 123456]
+11:14:56 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+11:14:56 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x0000026718DD7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+11:14:56 PM: DEBUG [usuario_dao.py:40] Sentencia a ejecutar: INSERT INTO usuario(username, password) VALUES(%s, %s)
+11:14:56 PM: DEBUG [usuario_dao.py:43] Usuario insertado correctamente: Usuario [ID: None, Username: pgervasi12, Password: 12456]
+11:14:56 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+11:14:56 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+11:14:56 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x0000026718DD7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+11:14:56 PM: INFO [menu_app_usuario.py:42] Usuarios insertados: 1
+11:14:58 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+11:14:58 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x0000026718DD7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+11:14:58 PM: DEBUG [usuario_dao.py:26] Sentencia a ejecutar: SELECT id_usuario, username, password FROM usuario ORDER BY id_usuario
+11:14:58 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+11:14:58 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+11:14:58 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x0000026718DD7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+11:14:58 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 1, Username: CandeltaTarifa18, Password: 123456]
+11:14:58 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 3, Username: RamiroMunoz2712, Password: 123456]
+11:14:58 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 4, Username: pgervasi12, Password: 12456]
+11:15:13 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+11:15:13 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x0000026718DD7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+11:15:13 PM: DEBUG [usuario_dao.py:60] Sentencia a ejecutar: DELETE FROM usuario WHERE id_usuario=%s
+11:15:13 PM: DEBUG [usuario_dao.py:63] Usuario eliminado con id: 4
+11:15:13 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+11:15:13 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+11:15:13 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x0000026718DD7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+11:15:13 PM: INFO [menu_app_usuario.py:56] Usuarios eliminados: 1
+11:15:15 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+11:15:15 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x0000026718DD7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+11:15:15 PM: DEBUG [usuario_dao.py:26] Sentencia a ejecutar: SELECT id_usuario, username, password FROM usuario ORDER BY id_usuario
+11:15:15 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+11:15:15 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+11:15:15 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x0000026718DD7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+11:15:15 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 1, Username: CandeltaTarifa18, Password: 123456]
+11:15:15 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 3, Username: RamiroMunoz2712, Password: 123456]
+08:14:07 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+08:14:07 PM: DEBUG [conexion.py:40] Pool de conexiones creado con éxito: <psycopg2.pool.SimpleConnectionPool object at 0x0000024E42593CB0>
+08:14:07 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x0000024E42407DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+08:14:07 PM: DEBUG [usuario_dao.py:26] Sentencia a ejecutar: SELECT id_usuario, username, password FROM usuario ORDER BY id_usuario
+08:14:07 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+08:14:07 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+08:14:07 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x0000024E42407DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+08:14:07 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 1, Username: CandeltaTarifa18, Password: 123456]
+08:14:07 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 3, Username: RamiroMunoz2712, Password: 123456]
+08:16:20 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+08:16:20 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x0000024E42407DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+08:16:20 PM: DEBUG [usuario_dao.py:40] Sentencia a ejecutar: INSERT INTO usuario(username, password) VALUES(%s, %s)
+08:16:20 PM: DEBUG [usuario_dao.py:43] Usuario insertado correctamente: Usuario [ID: None, Username: ArielBetancud, Password: ariel123]
+08:16:20 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+08:16:20 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+08:16:20 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x0000024E42407DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+08:16:20 PM: INFO [menu_app_usuario.py:42] Usuarios insertados: 1
+08:16:27 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+08:16:27 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x0000024E42407DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+08:16:27 PM: DEBUG [usuario_dao.py:26] Sentencia a ejecutar: SELECT id_usuario, username, password FROM usuario ORDER BY id_usuario
+08:16:27 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+08:16:27 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+08:16:27 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x0000024E42407DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+08:16:27 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 1, Username: CandeltaTarifa18, Password: 123456]
+08:16:27 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 3, Username: RamiroMunoz2712, Password: 123456]
+08:16:27 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 5, Username: ArielBetancud, Password: ariel123]
+08:17:13 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+08:17:13 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x0000024E42407DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+08:17:13 PM: DEBUG [usuario_dao.py:50] Sentencia a ejecutar: UPDATE usuario SET username=%s, password=%s WHERE id_usuario=%s
+08:17:13 PM: DEBUG [usuario_dao.py:53] Usuario actualizado correctamente: Usuario [ID: 5, Username: Abetancud, Password: 123Ariel]
+08:17:13 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+08:17:13 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+08:17:13 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x0000024E42407DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+08:17:13 PM: INFO [menu_app_usuario.py:50] Usuarios actualizados: 1
+08:17:16 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+08:17:16 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x0000024E42407DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+08:17:16 PM: DEBUG [usuario_dao.py:26] Sentencia a ejecutar: SELECT id_usuario, username, password FROM usuario ORDER BY id_usuario
+08:17:16 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+08:17:16 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+08:17:16 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x0000024E42407DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+08:17:16 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 1, Username: CandeltaTarifa18, Password: 123456]
+08:17:16 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 3, Username: RamiroMunoz2712, Password: 123456]
+08:17:16 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 5, Username: Abetancud, Password: 123Ariel]
+08:17:27 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+08:17:27 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x0000024E42407DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+08:17:27 PM: DEBUG [usuario_dao.py:60] Sentencia a ejecutar: DELETE FROM usuario WHERE id_usuario=%s
+08:17:27 PM: DEBUG [usuario_dao.py:63] Usuario eliminado con id: 5
+08:17:27 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+08:17:27 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+08:17:27 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x0000024E42407DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+08:17:27 PM: INFO [menu_app_usuario.py:56] Usuarios eliminados: 1
+08:17:31 PM: INFO [menu_app_usuario.py:62] Salimos de la aplicación. ¡Hasta luego!
+09:39:44 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+09:39:44 PM: DEBUG [conexion.py:40] Pool de conexiones creado con éxito: <psycopg2.pool.SimpleConnectionPool object at 0x000001ABD24D3E00>
+09:39:44 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x000001ABD22B7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:39:44 PM: DEBUG [usuario_dao.py:40] Sentencia a ejecutar: INSERT INTO usuario(username, password) VALUES(%s, %s)
+09:39:45 PM: DEBUG [usuario_dao.py:43] Usuario insertado correctamente: Usuario [ID: None, Username: g, Password: g]
+09:39:45 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+09:39:45 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+09:39:45 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x000001ABD22B7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:39:45 PM: INFO [menu_app_usuario.py:42] Usuarios insertados: 1
+09:39:49 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+09:39:49 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x000001ABD22B7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:39:49 PM: DEBUG [usuario_dao.py:26] Sentencia a ejecutar: SELECT id_usuario, username, password FROM usuario ORDER BY id_usuario
+09:39:49 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+09:39:49 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+09:39:49 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x000001ABD22B7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:39:49 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 1, Username: CandeltaTarifa18, Password: 123456]
+09:39:49 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 3, Username: RamiroMunoz2712, Password: 123456]
+09:39:49 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 6, Username: g, Password: g]
+09:39:59 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+09:39:59 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x000001ABD22B7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:39:59 PM: DEBUG [usuario_dao.py:60] Sentencia a ejecutar: DELETE FROM usuario WHERE id_usuario=%s
+09:39:59 PM: DEBUG [usuario_dao.py:63] Usuario eliminado con id: 6
+09:39:59 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+09:39:59 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+09:39:59 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x000001ABD22B7DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:39:59 PM: INFO [menu_app_usuario.py:56] Usuarios eliminados: 1
+09:44:38 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+09:44:38 PM: DEBUG [conexion.py:41] Pool de conexiones creado con éxito: <psycopg2.pool.SimpleConnectionPool object at 0x000001C3FEC87CB0>
+09:44:38 PM: DEBUG [conexion.py:58] Conexión obtenida del pool: <connection object at 0x000001C3FE7BC150; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:44:38 PM: DEBUG [usuario_dao.py:28] Ejecutando consulta: SELECT id_usuario, username, password FROM usuario ORDER BY id_usuario
+09:44:38 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+09:44:38 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+09:44:38 PM: DEBUG [conexion.py:69] Conexión devuelta al pool: <connection object at 0x000001C3FE7BC150; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:44:38 PM: INFO [menu_app_usuario.py:37] Usuario [ID: 1, Username: CandeltaTarifa18, Password: 123456]
+09:44:38 PM: INFO [menu_app_usuario.py:37] Usuario [ID: 3, Username: RamiroMunoz2712, Password: 123456]
+09:44:45 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+09:44:45 PM: DEBUG [conexion.py:58] Conexión obtenida del pool: <connection object at 0x000001C3FE7BC150; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:44:45 PM: DEBUG [usuario_dao.py:45] Ejecutando inserción: INSERT INTO usuario(username, password) VALUES(%s, %s)
+09:44:45 PM: DEBUG [usuario_dao.py:48] Usuario insertado exitosamente: Usuario [ID: None, Username: g, Password: g]
+09:44:45 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+09:44:45 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+09:44:45 PM: DEBUG [conexion.py:69] Conexión devuelta al pool: <connection object at 0x000001C3FE7BC150; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:44:45 PM: INFO [menu_app_usuario.py:51] Usuarios insertados: 1
+09:44:49 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+09:44:49 PM: DEBUG [conexion.py:58] Conexión obtenida del pool: <connection object at 0x000001C3FE7BC150; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:44:49 PM: DEBUG [usuario_dao.py:28] Ejecutando consulta: SELECT id_usuario, username, password FROM usuario ORDER BY id_usuario
+09:44:49 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+09:44:49 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+09:44:49 PM: DEBUG [conexion.py:69] Conexión devuelta al pool: <connection object at 0x000001C3FE7BC150; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:44:49 PM: INFO [menu_app_usuario.py:37] Usuario [ID: 1, Username: CandeltaTarifa18, Password: 123456]
+09:44:49 PM: INFO [menu_app_usuario.py:37] Usuario [ID: 3, Username: RamiroMunoz2712, Password: 123456]
+09:44:49 PM: INFO [menu_app_usuario.py:37] Usuario [ID: 7, Username: g, Password: g]
+09:44:56 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+09:44:56 PM: DEBUG [conexion.py:58] Conexión obtenida del pool: <connection object at 0x000001C3FE7BC150; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:44:56 PM: DEBUG [usuario_dao.py:85] Ejecutando eliminación: DELETE FROM usuario WHERE id_usuario=%s
+09:44:56 PM: DEBUG [usuario_dao.py:92] Usuario eliminado con id: 7
+09:44:56 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+09:44:56 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+09:44:56 PM: DEBUG [conexion.py:69] Conexión devuelta al pool: <connection object at 0x000001C3FE7BC150; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:44:56 PM: INFO [menu_app_usuario.py:70] Usuarios eliminados: 1
+09:45:26 PM: ERROR [menu_app_usuario.py:76] Entrada inválida. Debes ingresar un número entero válido.
+09:45:31 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+09:45:31 PM: DEBUG [conexion.py:40] Pool de conexiones creado con éxito: <psycopg2.pool.SimpleConnectionPool object at 0x0000026BB4FE3CB0>
+09:45:31 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x0000026BB4E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:45:31 PM: DEBUG [usuario_dao.py:26] Sentencia a ejecutar: SELECT id_usuario, username, password FROM usuario ORDER BY id_usuario
+09:45:31 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+09:45:31 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+09:45:31 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x0000026BB4E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:45:31 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 1, Username: CandeltaTarifa18, Password: 123456]
+09:45:31 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 3, Username: RamiroMunoz2712, Password: 123456]
+09:45:43 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+09:45:43 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x0000026BB4E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:45:43 PM: DEBUG [usuario_dao.py:40] Sentencia a ejecutar: INSERT INTO usuario(username, password) VALUES(%s, %s)
+09:45:43 PM: DEBUG [usuario_dao.py:43] Usuario insertado correctamente: Usuario [ID: None, Username: gf, Password: cfdsc]
+09:45:43 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+09:45:43 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+09:45:43 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x0000026BB4E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:45:43 PM: INFO [menu_app_usuario.py:42] Usuarios insertados: 1
+09:45:47 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+09:45:47 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x0000026BB4E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:45:47 PM: DEBUG [usuario_dao.py:26] Sentencia a ejecutar: SELECT id_usuario, username, password FROM usuario ORDER BY id_usuario
+09:45:47 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+09:45:47 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+09:45:47 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x0000026BB4E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:45:47 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 1, Username: CandeltaTarifa18, Password: 123456]
+09:45:47 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 3, Username: RamiroMunoz2712, Password: 123456]
+09:45:47 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 8, Username: gf, Password: cfdsc]
+09:45:51 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+09:45:51 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x0000026BB4E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:45:51 PM: DEBUG [usuario_dao.py:60] Sentencia a ejecutar: DELETE FROM usuario WHERE id_usuario=%s
+09:45:51 PM: DEBUG [usuario_dao.py:63] Usuario eliminado con id: 8
+09:45:51 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+09:45:51 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+09:45:51 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x0000026BB4E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:45:51 PM: INFO [menu_app_usuario.py:56] Usuarios eliminados: 1
+09:45:52 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+09:45:52 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x0000026BB4E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:45:52 PM: DEBUG [usuario_dao.py:26] Sentencia a ejecutar: SELECT id_usuario, username, password FROM usuario ORDER BY id_usuario
+09:45:52 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+09:45:52 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+09:45:52 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x0000026BB4E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:45:52 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 1, Username: CandeltaTarifa18, Password: 123456]
+09:45:52 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 3, Username: RamiroMunoz2712, Password: 123456]
+09:48:02 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+09:48:02 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x0000026BB4E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:48:02 PM: DEBUG [usuario_dao.py:50] Sentencia a ejecutar: UPDATE usuario SET username=%s, password=%s WHERE id_usuario=%s
+09:48:02 PM: DEBUG [usuario_dao.py:53] Usuario actualizado correctamente: Usuario [ID: 45, Username: gh, Password: dfsdf]
+09:48:02 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+09:48:02 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+09:48:02 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x0000026BB4E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:48:02 PM: INFO [menu_app_usuario.py:50] Usuarios actualizados: 0
+09:48:07 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+09:48:07 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x0000026BB4E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:48:07 PM: DEBUG [usuario_dao.py:26] Sentencia a ejecutar: SELECT id_usuario, username, password FROM usuario ORDER BY id_usuario
+09:48:07 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+09:48:07 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+09:48:07 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x0000026BB4E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:48:07 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 1, Username: CandeltaTarifa18, Password: 123456]
+09:48:07 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 3, Username: RamiroMunoz2712, Password: 123456]
+09:48:23 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+09:48:23 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x0000026BB4E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:48:23 PM: DEBUG [usuario_dao.py:50] Sentencia a ejecutar: UPDATE usuario SET username=%s, password=%s WHERE id_usuario=%s
+09:48:23 PM: DEBUG [usuario_dao.py:53] Usuario actualizado correctamente: Usuario [ID: 58, Username: fr, Password: fr]
+09:48:23 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+09:48:23 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+09:48:23 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x0000026BB4E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:48:23 PM: INFO [menu_app_usuario.py:50] Usuarios actualizados: 0
+09:48:29 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+09:48:29 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x0000026BB4E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:48:29 PM: DEBUG [usuario_dao.py:60] Sentencia a ejecutar: DELETE FROM usuario WHERE id_usuario=%s
+09:48:29 PM: DEBUG [usuario_dao.py:63] Usuario eliminado con id: 85
+09:48:29 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+09:48:29 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+09:48:29 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x0000026BB4E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:48:29 PM: INFO [menu_app_usuario.py:56] Usuarios eliminados: 0
+09:55:32 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+09:55:32 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x0000026BB4E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:55:32 PM: DEBUG [usuario_dao.py:26] Sentencia a ejecutar: SELECT id_usuario, username, password FROM usuario ORDER BY id_usuario
+09:55:32 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+09:55:32 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+09:55:32 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x0000026BB4E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:55:32 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 1, Username: CandeltaTarifa18, Password: 123456]
+09:55:32 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 3, Username: RamiroMunoz2712, Password: 123456]
+09:55:51 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+09:55:51 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x0000026BB4E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:55:51 PM: DEBUG [usuario_dao.py:40] Sentencia a ejecutar: INSERT INTO usuario(username, password) VALUES(%s, %s)
+09:55:51 PM: DEBUG [usuario_dao.py:43] Usuario insertado correctamente: Usuario [ID: None, Username: arielbe, Password: 1234]
+09:55:51 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+09:55:51 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+09:55:51 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x0000026BB4E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:55:51 PM: INFO [menu_app_usuario.py:42] Usuarios insertados: 1
+09:55:57 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+09:55:57 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x0000026BB4E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:55:57 PM: DEBUG [usuario_dao.py:26] Sentencia a ejecutar: SELECT id_usuario, username, password FROM usuario ORDER BY id_usuario
+09:55:57 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+09:55:57 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+09:55:57 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x0000026BB4E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:55:57 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 1, Username: CandeltaTarifa18, Password: 123456]
+09:55:57 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 3, Username: RamiroMunoz2712, Password: 123456]
+09:55:57 PM: INFO [menu_app_usuario.py:35] Usuario [ID: 9, Username: arielbe, Password: 1234]
+09:56:13 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+09:56:13 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x0000026BB4E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:56:13 PM: DEBUG [usuario_dao.py:60] Sentencia a ejecutar: DELETE FROM usuario WHERE id_usuario=%s
+09:56:13 PM: DEBUG [usuario_dao.py:63] Usuario eliminado con id: 54
+09:56:13 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+09:56:13 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+09:56:13 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x0000026BB4E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:56:13 PM: INFO [menu_app_usuario.py:56] Usuarios eliminados: 0
+09:56:21 PM: DEBUG [cursor_del_pool.py:30] Inicio del bloque with (CursorDelPool)
+09:56:21 PM: DEBUG [conexion.py:52] Conexión obtenida del pool: <connection object at 0x0000026BB4E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:56:21 PM: DEBUG [usuario_dao.py:60] Sentencia a ejecutar: DELETE FROM usuario WHERE id_usuario=%s
+09:56:21 PM: DEBUG [usuario_dao.py:63] Usuario eliminado con id: 9
+09:56:21 PM: DEBUG [cursor_del_pool.py:39] Ejecutando método __exit__
+09:56:21 PM: DEBUG [cursor_del_pool.py:48] Transacción confirmada (commit)
+09:56:21 PM: DEBUG [conexion.py:59] Conexión devuelta al pool: <connection object at 0x0000026BB4E57DE0; dsn: 'user=postgres password=xxx dbname=laboratorio_usuario host=127.0.0.1 port=5432', closed: 0>
+09:56:21 PM: INFO [menu_app_usuario.py:56] Usuarios eliminados: 1
+09:59:37 PM: INFO [menu_app_usuario.py:62] Salimos de la aplicación. ¡Hasta luego!

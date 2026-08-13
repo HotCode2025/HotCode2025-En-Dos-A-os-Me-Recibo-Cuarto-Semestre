@@ -1,0 +1,56 @@
+- CONCEPTOS BÁSICOS DE LA COMPOSICIÓN DEL DISEÑO:
+  1. Balance o Equilibrio: Distribución del peso visual dentro de la composición:
+
+     Simétrico: Los elementos se distribuyen equitativamente a ambos lados de un eje central, transmitiendo formalidad y estabilidad.
+
+     Asimétrico: Distribución de elementos con pesos visuales variados pero compensados, ofreciendo un diseño dinámico y moderno.
+
+  2. Contraste: Permite hacer destacar un elemento sobre otro mediante diferencias drásticas (de color, tamaño, forma o textura). Es fundamental tanto para la jerarquía visual como para garantizar la accesibilidad y legibilidad.
+
+  3. Alineación: Conecta los elementos visuales entre sí. Nada debe colocarse de forma arbitraria; alinear textos o contenedores mediante bordes o ejes imaginarios genera orden y coherencia estructural (CREAR RUTAS VISUALES).
+
+  4. Proximidad y Agrupación: Los elementos relacionados deben estar visualmente cerca entre sí (por ejemplo, el título de una tarjeta y su descripción), mientras que los conceptos distintos se separan con mayor espacio.
+
+  5. Repetición y Consistencia: Mantener los mismos patrones (como la misma paleta de colores, familias tipográficas, radios de borde o tamaños de botones) crea identidad visual y fluidez.
+
+  6. Espacio en Blanco (Espacio Negativo): El área vacía alrededor o entre las figuras. No es espacio "desperdiciado", sino una herramienta clave para darle "aire" a la interfaz, reducir la carga cognitiva y resaltar los elementos principales.
+
+- El diseño responsivo (o Responsive Web Design) es un enfoque de maquetación y diseño enfocado en lograr que una interfaz web o aplicación se adapte de forma fluida e inteligente al tamaño de pantalla, resolución y orientación del dispositivo donde se visualice (monitores, laptops, tablets, celulares).
+  Su objetivo principal es ofrecer una experiencia de usuario (UX) óptima sin necesidad de crear versiones separadas para cada dispositivo.
+  Al momento de arrancar un diseño debemos empezar por el diseño móvil, y luego vamos escalando hacia las diferentes pantallas.
+
+- Utilizar sistema de grillas y columnas: es la estructura fundamental para organizar contenido en diseño responsivo. Se basa en dividir el ancho de la pantalla en un número determinado de columnas verticales separadas por espacios uniformes.
+
+- Un brief (o briefing) es un documento corto, conciso y estructurado que resume los objetivos, el alcance, el público objetivo y las restricciones de un proyecto antes de empezar a trabajarlo.
+
+  Actúa como el contrato inicial de comunicación entre el cliente, el equipo de diseño/desarrollo y los demás involucrados para asegurar que todos estén alineados.
+  1. Elementos Clave de un Brief
+     - Descripción del Proyecto / Cliente: Breve contexto de la empresa, producto o servicio.
+
+     - Objetivos: ¿Qué se busca lograr? (Ej.: Aumentar conversiones, rediseñar la identidad de marca, crear un MVP responsivo).
+
+     - Público Objetivo (Target / Buyer Persona): A quién va dirigido (demografía, necesidades, comportamientos, dispositivos principales que usan).
+
+     - Entregables: La lista concreta de lo que se debe producir (Ej.: Prototipo en Figma, sitio web responsivo en React, kit de UI).
+
+     - Requerimientos Técnicos o de Marca: Guías de estilo existentes, paletas de colores, nivel de accesibilidad deseado (WCAG AA), tecnologías a utilizar o restricciones de servidor.
+
+     - Competencia: Referentes del sector, competidores directos y diferenciales del producto.
+
+     - Presupuesto y Tiempos (Timeline): Fechas clave (médulas / milestones), fecha límite de entrega y recursos asignados.
+
+- Preguntas que nos debemos hacer para realizar un Brief:
+  1. Cual es la necesidad, desafío o problema que se va a solucionar?
+  2. Que se espera lograr?
+  3. A quien se va a impactar?
+  4. Cuales son los beneficios que se van a obtener?
+  5. Como se va a comunicar?
+
+- Tipos de Brief
+
+- **Brief de Proyecto / Producto (Product Brief):** Define la visión del software o app, funcionalidades principales (_features_), la arquitectura del sistema y los objetivos clave del producto.
+- **Brief de Diseño (Design Brief):** Enfocado en la identidad visual, estética, sistemas de diseño, paleta de colores, tipografías y requerimientos de accesibilidad (UI/UX, branding).
+- **Brief Creativo / Publicitario (Creative Brief):** Centrado en campañas de comunicación o publicidad; especifica el mensaje central, la propuesta de valor y las llamadas a la acción (CTA).
+- **Brief de Marketing (Marketing Brief):** Define la estrategia comercial, estudio de la competencia, perfil del cliente ideal (_buyer persona_), canales de difusión y métricas de adquisición (ROI/KPIs).
+- **Brief de Negocio (Business Brief):** Dirigido a ejecutivos o _stakeholders_; resume la oportunidad comercial, la viabilidad financiera, el presupuesto y los objetivos estratégicos.
+- **Brief Interno (Internal Brief):** Documento operativo que traduce los requerimientos del cliente en tareas técnicas, sprints, asignación de roles y entregables para el equipo de desarrollo/diseño.
